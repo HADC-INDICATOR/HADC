@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADC INDICATOR - Join Now</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1DA1F2, #1DA1F2;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .countdown {
+            color: oklch(0.455 0.188 13.697);
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            padding: 60px 40px;
+            text-align: center;
+            max-width: 600px;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #1DA1F2, #1DA1F2);
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #f0f0f0;
+            margin: 0 auto 30px;
+            display: block;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            background-color: #e8e8e8;
+        }
+        .profile-image:not([src]), 
+        .profile-image[src=""] {
+            background: linear-gradient(135deg, #1DA1F2, #1DA1F2);
+            position: relative;
+        }
+        .profile-image:not([src])::before, 
+        .profile-image[src=""]::before {
+            content: "AA"; /* Replace with your initials */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .name {
+            font-size: 2.2em;
+            font-weight: 700;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+        .title {
+            font-size: 1.4em;
+            color: #34495e;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        .credentials {
+            margin-bottom: 35px;
+        }
+        .credential-item {
+            color: #5a6c7d;
+            font-size: 1em;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .join-button {
+            background: linear-gradient(135deg, #4a90e2, #357abd);
+            color: white;
+            border: none;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
+            margin: 20px 0;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .join-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(74, 144, 226, 0.4);
+            background: linear-gradient(135deg, #357abd, #2968a3);
+        }
+        .description {
+            color: #5a6c7d;
+            font-size: 1.05em;
+            margin: 30px 0;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+        .terms-link {
+            color: #4a90e2;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .terms-link:hover {
+            text-decoration: underline;
+        }
+        .terms-text {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin: 25px 0;
+        }
+        .disclaimer {
+            color: #95a5a6;
+            font-size: 0.8em;
+            line-height: 1.5;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #ecf0f1;
+        }
+        .bold {
+            font-weight: 700;
+        }
+        .redirect-text {
+            color: #5a6c7d;
+            font-size: 0.9em;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 40px 25px;
+                margin: 10px;
+            }
+            .name {
+                font-size: 1.8em;
+            }
+            .title {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+    <script>
+        let countdown = 6;
+        function startCountdown() {
+            const interval = setInterval(() => {
+                countdown--;
+                if (countdown < 0) {
+                    clearInterval(interval);
+                    window.location.href = 'https://t.me/HADCcopyrighted'; // Replace with your Telegram link
+                }
+            }, 1000);
+        }
+        window.onload = startCountdown;
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="IMG_9235.jpg" alt="HADC" class="profile-image" crossorigin="anonymous" onload="this.style.background='none'" onerror="this.style.background='linear-gradient(135deg, #667eea, #764ba2)'; this.innerHTML='<div style=\'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:white;font-size:32px;font-weight:bold;\'>AA</div>'; this.style.position='relative'">
+        <h1 class="name">HADC INDICATOR OFFICIAL</h1>
+        <h2 class="title"></h2>
+        <div class="credentials">
+            <div class="credential-item bold">🏆 HADC Trusted in Markets for Over 5 Years</div>
+            <div class="credential-item">💼 Backed by<span class="bold"> 11,000+ </span>Active Users</div>
+            <div class="credential-item">📊 HADC Built for Intraday, Swing, Positional & Investment.</div>
+        </div>
+        <div class="credentials">
+            <div class="credential-item bold">Why Join HADC?</div>
+            <div class="credential-item"><span class="bold">HADC is Enabled with Real-Time Buy/Sell Alerts</span> with Access to Entry, Exit, StopLoss and TSL too.</div>
+        </div>
+        <div class="credentials">
+            <p class="credential-item">Join the <span class="bold">Exclusive community</span> on Telegram for updates and insights.</p>
+        </div>
+        <a href="https://t.me/HADCcopyrighted" target="_blank" class="join-button">Join Telegram Channel</a>
+        <p class="description">
+            Connect with HADC INDICATOR on Telegram by clicking the button above.
+        </p>
+        <p class="terms-text">
+            
+        </p>
+        <p class="disclaimer">
+            This site is not a part of the Telegram website. Additionally, this site is NOT endorsed by Telegram in any Way.
+        </p>
+    </div>
+</body>
+</html>
